@@ -1,0 +1,818 @@
+###############################################################################
+#                                                                             #
+# IAR ELF Linker V6.50.1.4415/W32 for ARM               24/Sep/2015  14:47:06 #
+# Copyright 2007-2012 IAR Systems AB.                                         #
+#                                                                             #
+#    Output file  =  C:\Users\lisonchen\1project\c_STM32_USB-FS-Device_Lib_V4 #
+#                    .0.0\Projects\Mass_Storage\EWARM\STM3210E-EVAL\Exe\MassS #
+#                    torage.out                                               #
+#    Map file     =  C:\Users\lisonchen\1project\c_STM32_USB-FS-Device_Lib_V4 #
+#                    .0.0\Projects\Mass_Storage\EWARM\STM3210E-EVAL\List\Mass #
+#                    Storage.map                                              #
+#    Command line =  C:\Users\lisonchen\1project\c_STM32_USB-FS-Device_Lib_V4 #
+#                    .0.0\Projects\Mass_Storage\EWARM\STM3210E-EVAL\Obj\fsmc_ #
+#                    nand.o C:\Users\lisonchen\1project\c_STM32_USB-FS-Device #
+#                    _Lib_V4.0.0\Projects\Mass_Storage\EWARM\STM3210E-EVAL\Ob #
+#                    j\hw_config.o C:\Users\lisonchen\1project\c_STM32_USB-FS #
+#                    -Device_Lib_V4.0.0\Projects\Mass_Storage\EWARM\STM3210E- #
+#                    EVAL\Obj\main.o C:\Users\lisonchen\1project\c_STM32_USB- #
+#                    FS-Device_Lib_V4.0.0\Projects\Mass_Storage\EWARM\STM3210 #
+#                    E-EVAL\Obj\mass_mal.o C:\Users\lisonchen\1project\c_STM3 #
+#                    2_USB-FS-Device_Lib_V4.0.0\Projects\Mass_Storage\EWARM\S #
+#                    TM3210E-EVAL\Obj\memory.o C:\Users\lisonchen\1project\c_ #
+#                    STM32_USB-FS-Device_Lib_V4.0.0\Projects\Mass_Storage\EWA #
+#                    RM\STM3210E-EVAL\Obj\misc.o                              #
+#                    C:\Users\lisonchen\1project\c_STM32_USB-FS-Device_Lib_V4 #
+#                    .0.0\Projects\Mass_Storage\EWARM\STM3210E-EVAL\Obj\nand_ #
+#                    if.o C:\Users\lisonchen\1project\c_STM32_USB-FS-Device_L #
+#                    ib_V4.0.0\Projects\Mass_Storage\EWARM\STM3210E-EVAL\Obj\ #
+#                    scsi_data.o C:\Users\lisonchen\1project\c_STM32_USB-FS-D #
+#                    evice_Lib_V4.0.0\Projects\Mass_Storage\EWARM\STM3210E-EV #
+#                    AL\Obj\startup_stm32f10x_hd.o                            #
+#                    C:\Users\lisonchen\1project\c_STM32_USB-FS-Device_Lib_V4 #
+#                    .0.0\Projects\Mass_Storage\EWARM\STM3210E-EVAL\Obj\stm32 #
+#                    10e_eval.o C:\Users\lisonchen\1project\c_STM32_USB-FS-De #
+#                    vice_Lib_V4.0.0\Projects\Mass_Storage\EWARM\STM3210E-EVA #
+#                    L\Obj\stm3210e_eval_sdio_sd.o                            #
+#                    C:\Users\lisonchen\1project\c_STM32_USB-FS-Device_Lib_V4 #
+#                    .0.0\Projects\Mass_Storage\EWARM\STM3210E-EVAL\Obj\stm32 #
+#                    _it.o C:\Users\lisonchen\1project\c_STM32_USB-FS-Device_ #
+#                    Lib_V4.0.0\Projects\Mass_Storage\EWARM\STM3210E-EVAL\Obj #
+#                    \stm32f10x_dma.o C:\Users\lisonchen\1project\c_STM32_USB #
+#                    -FS-Device_Lib_V4.0.0\Projects\Mass_Storage\EWARM\STM321 #
+#                    0E-EVAL\Obj\stm32f10x_exti.o                             #
+#                    C:\Users\lisonchen\1project\c_STM32_USB-FS-Device_Lib_V4 #
+#                    .0.0\Projects\Mass_Storage\EWARM\STM3210E-EVAL\Obj\stm32 #
+#                    f10x_flash.o C:\Users\lisonchen\1project\c_STM32_USB-FS- #
+#                    Device_Lib_V4.0.0\Projects\Mass_Storage\EWARM\STM3210E-E #
+#                    VAL\Obj\stm32f10x_fsmc.o C:\Users\lisonchen\1project\c_S #
+#                    TM32_USB-FS-Device_Lib_V4.0.0\Projects\Mass_Storage\EWAR #
+#                    M\STM3210E-EVAL\Obj\stm32f10x_gpio.o                     #
+#                    C:\Users\lisonchen\1project\c_STM32_USB-FS-Device_Lib_V4 #
+#                    .0.0\Projects\Mass_Storage\EWARM\STM3210E-EVAL\Obj\stm32 #
+#                    f10x_i2c.o C:\Users\lisonchen\1project\c_STM32_USB-FS-De #
+#                    vice_Lib_V4.0.0\Projects\Mass_Storage\EWARM\STM3210E-EVA #
+#                    L\Obj\stm32f10x_pwr.o C:\Users\lisonchen\1project\c_STM3 #
+#                    2_USB-FS-Device_Lib_V4.0.0\Projects\Mass_Storage\EWARM\S #
+#                    TM3210E-EVAL\Obj\stm32f10x_rcc.o                         #
+#                    C:\Users\lisonchen\1project\c_STM32_USB-FS-Device_Lib_V4 #
+#                    .0.0\Projects\Mass_Storage\EWARM\STM3210E-EVAL\Obj\stm32 #
+#                    f10x_sdio.o C:\Users\lisonchen\1project\c_STM32_USB-FS-D #
+#                    evice_Lib_V4.0.0\Projects\Mass_Storage\EWARM\STM3210E-EV #
+#                    AL\Obj\stm32f10x_spi.o C:\Users\lisonchen\1project\c_STM #
+#                    32_USB-FS-Device_Lib_V4.0.0\Projects\Mass_Storage\EWARM\ #
+#                    STM3210E-EVAL\Obj\stm32f10x_usart.o                      #
+#                    C:\Users\lisonchen\1project\c_STM32_USB-FS-Device_Lib_V4 #
+#                    .0.0\Projects\Mass_Storage\EWARM\STM3210E-EVAL\Obj\syste #
+#                    m_stm32f10x.o C:\Users\lisonchen\1project\c_STM32_USB-FS #
+#                    -Device_Lib_V4.0.0\Projects\Mass_Storage\EWARM\STM3210E- #
+#                    EVAL\Obj\usb_bot.o C:\Users\lisonchen\1project\c_STM32_U #
+#                    SB-FS-Device_Lib_V4.0.0\Projects\Mass_Storage\EWARM\STM3 #
+#                    210E-EVAL\Obj\usb_core.o C:\Users\lisonchen\1project\c_S #
+#                    TM32_USB-FS-Device_Lib_V4.0.0\Projects\Mass_Storage\EWAR #
+#                    M\STM3210E-EVAL\Obj\usb_desc.o                           #
+#                    C:\Users\lisonchen\1project\c_STM32_USB-FS-Device_Lib_V4 #
+#                    .0.0\Projects\Mass_Storage\EWARM\STM3210E-EVAL\Obj\usb_e #
+#                    ndp.o C:\Users\lisonchen\1project\c_STM32_USB-FS-Device_ #
+#                    Lib_V4.0.0\Projects\Mass_Storage\EWARM\STM3210E-EVAL\Obj #
+#                    \usb_init.o C:\Users\lisonchen\1project\c_STM32_USB-FS-D #
+#                    evice_Lib_V4.0.0\Projects\Mass_Storage\EWARM\STM3210E-EV #
+#                    AL\Obj\usb_int.o C:\Users\lisonchen\1project\c_STM32_USB #
+#                    -FS-Device_Lib_V4.0.0\Projects\Mass_Storage\EWARM\STM321 #
+#                    0E-EVAL\Obj\usb_istr.o C:\Users\lisonchen\1project\c_STM #
+#                    32_USB-FS-Device_Lib_V4.0.0\Projects\Mass_Storage\EWARM\ #
+#                    STM3210E-EVAL\Obj\usb_mem.o                              #
+#                    C:\Users\lisonchen\1project\c_STM32_USB-FS-Device_Lib_V4 #
+#                    .0.0\Projects\Mass_Storage\EWARM\STM3210E-EVAL\Obj\usb_p #
+#                    rop.o C:\Users\lisonchen\1project\c_STM32_USB-FS-Device_ #
+#                    Lib_V4.0.0\Projects\Mass_Storage\EWARM\STM3210E-EVAL\Obj #
+#                    \usb_pwr.o C:\Users\lisonchen\1project\c_STM32_USB-FS-De #
+#                    vice_Lib_V4.0.0\Projects\Mass_Storage\EWARM\STM3210E-EVA #
+#                    L\Obj\usb_regs.o C:\Users\lisonchen\1project\c_STM32_USB #
+#                    -FS-Device_Lib_V4.0.0\Projects\Mass_Storage\EWARM\STM321 #
+#                    0E-EVAL\Obj\usb_scsi.o C:\Users\lisonchen\1project\c_STM #
+#                    32_USB-FS-Device_Lib_V4.0.0\Projects\Mass_Storage\EWARM\ #
+#                    STM3210E-EVAL\Obj\usb_sil.o --redirect                   #
+#                    _Printf=_PrintfFull --redirect _Scanf=_ScanfFull -o      #
+#                    C:\Users\lisonchen\1project\c_STM32_USB-FS-Device_Lib_V4 #
+#                    .0.0\Projects\Mass_Storage\EWARM\STM3210E-EVAL\Exe\MassS #
+#                    torage.out --map C:\Users\lisonchen\1project\c_STM32_USB #
+#                    -FS-Device_Lib_V4.0.0\Projects\Mass_Storage\EWARM\STM321 #
+#                    0E-EVAL\List\MassStorage.map --config                    #
+#                    C:\Users\lisonchen\1project\c_STM32_USB-FS-Device_Lib_V4 #
+#                    .0.0\Projects\Mass_Storage\EWARM\stm32f10x_flash.icf     #
+#                    --semihosting --entry __iar_program_start --vfe          #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x080fffff] { ro };
+"P2":  place in [from 0x20000000 to 0x20017fff] { rw, block CSTACK, block HEAP };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A1":                                      0x130
+  .intvec            ro code  0x08000000   0x130  startup_stm32f10x_hd.o [1]
+                            - 0x08000130   0x130
+
+"P1":                                     0x3ba0
+  .text              ro code  0x08000130   0xd2e  stm3210e_eval_sdio_sd.o [1]
+  .text              ro code  0x08000e5e    0x2e  copy_init3.o [4]
+  .text              ro code  0x08000e8c   0x1a8  stm3210e_eval.o [1]
+  .text              ro code  0x08001034   0x138  stm32f10x_sdio.o [1]
+  .text              ro code  0x0800116c    0xc8  stm32f10x_gpio.o [1]
+  .text              ro code  0x08001234    0x70  stm32f10x_dma.o [1]
+  .text              ro code  0x080012a4    0x4c  stm32f10x_rcc.o [1]
+  .text              ro code  0x080012f0   0x7d2  usb_core.o [1]
+  .text              ro code  0x08001ac2    0x22  zero_init3.o [4]
+  .text              ro code  0x08001ae4   0x1c6  usb_regs.o [1]
+  .text              ro code  0x08001caa    0x48  usb_mem.o [1]
+  .text              ro code  0x08001cf4   0x4ac  nand_if.o [1]
+  .text              ro code  0x080021a0   0x37a  fsmc_nand.o [1]
+  .text              ro code  0x0800251c    0x76  ABImemcpy.o [4]
+  .text              ro code  0x08002594    0x9c  stm32f10x_fsmc.o [1]
+  .text              ro code  0x08002630   0x2d4  usb_scsi.o [1]
+  .text              ro code  0x08002904   0x2b6  usb_bot.o [1]
+  .text              ro code  0x08002bbc   0x166  mass_mal.o [1]
+  .text              ro code  0x08002d24   0x180  memory.o [1]
+  .text              ro code  0x08002ea4    0x66  usb_sil.o [1]
+  .text              ro code  0x08002f0c   0x194  hw_config.o [1]
+  .text              ro code  0x080030a0    0x74  stm32f10x_exti.o [1]
+  .text              ro code  0x08003114    0xec  system_stm32f10x.o [1]
+  .text              ro code  0x08003200    0x78  misc.o [1]
+  .text              ro code  0x08003278   0x224  usb_prop.o [1]
+  .text              ro code  0x0800349c   0x184  usb_pwr.o [1]
+  .text              ro code  0x08003620   0x1b4  usb_int.o [1]
+  .text              ro code  0x080037d4    0xbc  usb_istr.o [1]
+  .rodata            const    0x08003890    0x98  usb_desc.o [1]
+  .text              ro code  0x08003928    0x2a  stm32_it.o [1]
+  .text              ro code  0x08003954    0x28  main.o [1]
+  .text              ro code  0x0800397c    0x20  usb_init.o [1]
+  .text              ro code  0x0800399c    0x28  data_init.o [4]
+  .iar.init_table    const    0x080039c4    0x24  - Linker created -
+  .text              ro code  0x080039e8    0x16  cmain.o [4]
+  .text              ro code  0x080039fe     0x4  low_level_init.o [3]
+  .text              ro code  0x08003a02     0x4  exit.o [3]
+  .text              ro code  0x08003a08     0xa  cexit.o [4]
+  .text              ro code  0x08003a14    0x14  exit.o [5]
+  .text              ro code  0x08003a28    0x10  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003a38     0xc  cstartup_M.o [4]
+  .text              ro code  0x08003a44     0x8  usb_endp.o [1]
+  .text              ro code  0x08003a4c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003a50     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003a54     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003a58     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003a5c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003a60     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003a64     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003a68     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003a6c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003a70     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003a74     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003a78     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003a7c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003a80     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003a84     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003a88     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003a8c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003a90     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003a94     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003a98     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003a9c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003aa0     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003aa4     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003aa8     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003aac     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003ab0     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003ab4     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003ab8     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003abc     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003ac0     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003ac4     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003ac8     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003acc     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003ad0     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003ad4     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003ad8     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003adc     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003ae0     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003ae4     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003ae8     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003aec     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003af0     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003af4     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003af8     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003afc     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003b00     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003b04     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003b08     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003b0c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003b10     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003b14     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003b18     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003b1c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003b20     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003b24     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003b28     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003b2c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003b30     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003b34     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003b38     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003b3c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003b40     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003b44     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003b48     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003b4c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003b50     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003b54     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003b58     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x08003b5c     0x4  startup_stm32f10x_hd.o [1]
+  .rodata            const    0x08003b60     0x0  zero_init3.o [4]
+  .rodata            const    0x08003b60     0x0  copy_init3.o [4]
+  Initializer bytes  ro data  0x08003b60   0x170  <for P2 s0>
+                            - 0x08003cd0  0x3ba0
+
+"P2", part 1 of 3:                         0x170
+  P2 s0                       0x20000000   0x170  <Init block>
+    .data            inited   0x20000000    0x30  usb_prop.o [1]
+    .data            inited   0x20000030    0x28  usb_prop.o [1]
+    .data            inited   0x20000058    0x24  scsi_data.o [1]
+    .data            inited   0x2000007c    0x24  scsi_data.o [1]
+    .data            inited   0x200000a0    0x24  usb_prop.o [1]
+    .data            inited   0x200000c4    0x1c  usb_desc.o [1]
+    .data            inited   0x200000e0    0x1c  usb_istr.o [1]
+    .data            inited   0x200000fc    0x1c  usb_istr.o [1]
+    .data            inited   0x20000118    0x14  scsi_data.o [1]
+    .data            inited   0x2000012c    0x10  stm3210e_eval.o [1]
+    .data            inited   0x2000013c     0xc  scsi_data.o [1]
+    .data            inited   0x20000148     0x8  scsi_data.o [1]
+    .data            inited   0x20000150     0x8  usb_prop.o [1]
+    .data            inited   0x20000158     0x8  usb_prop.o [1]
+    .data            inited   0x20000160     0x4  scsi_data.o [1]
+    .data            inited   0x20000164     0x4  usb_prop.o [1]
+    .data            inited   0x20000168     0x4  usb_prop.o [1]
+    .data            inited   0x2000016c     0x1  usb_pwr.o [1]
+                            - 0x20000170   0x170
+
+"P2", part 2 of 3:                         0xc80
+  .bss               zero     0x20000170   0x800  nand_if.o [1]
+  .bss               zero     0x20000970   0x200  memory.o [1]
+  .bss               zero     0x20000b70    0x7c  stm3210e_eval_sdio_sd.o [1]
+  .bss               zero     0x20000bec    0x2c  usb_bot.o [1]
+  .bss               zero     0x20000c18    0x74  mass_mal.o [1]
+  .bss               zero     0x20000c8c    0x24  memory.o [1]
+  .bss               zero     0x20000cb0    0x58  stm3210e_eval_sdio_sd.o [1]
+  .bss               zero     0x20000d08    0x40  usb_bot.o [1]
+  .bss               zero     0x20000d48    0x28  usb_init.o [1]
+  .bss               zero     0x20000d70    0x20  usb_pwr.o [1]
+  .bss               zero     0x20000d90    0x14  nand_if.o [1]
+  .bss               zero     0x20000da4    0x10  usb_bot.o [1]
+  .bss               zero     0x20000db4     0x8  hw_config.o [1]
+  .bss               zero     0x20000dbc     0x8  nand_if.o [1]
+  .bss               zero     0x20000dc4     0x8  scsi_data.o [1]
+  .bss               zero     0x20000dcc     0x8  scsi_data.o [1]
+  .bss               zero     0x20000dd4     0x8  usb_pwr.o [1]
+  .bss               zero     0x20000ddc     0x4  usb_core.o [1]
+  .bss               zero     0x20000de0     0x4  usb_int.o [1]
+  .bss               zero     0x20000de4     0x4  usb_istr.o [1]
+  .bss               zero     0x20000de8     0x4  usb_pwr.o [1]
+  .bss               zero     0x20000dec     0x2  usb_init.o [1]
+  .bss               zero     0x20000dee     0x1  usb_core.o [1]
+  .bss               zero     0x20000def     0x1  usb_init.o [1]
+                            - 0x20000df0   0xc80
+
+"P2", part 3 of 3:                         0x400
+  CSTACK                      0x20000df0   0x400  <Block>
+    CSTACK           uninit   0x20000df0   0x400  <Block tail>
+                            - 0x200011f0   0x400
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0xc80:
+          0x20000170  0xc80
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x170 (100% of destination):
+          0x08003b60  0x170
+    1 destination range, total size 0x16d:
+          0x20000000  0x16d
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                   ro code  ro data  rw data
+    ------                   -------  -------  -------
+C:\Users\lisonchen\1project\c_STM32_USB-FS-Device_Lib_V4.0.0\Projects\Mass_Storage\EWARM\STM3210E-EVAL\Obj: [1]
+    fsmc_nand.o                  890
+    hw_config.o                  404                 8
+    main.o                        40
+    mass_mal.o                   358               116
+    memory.o                     384               548
+    misc.o                       120
+    nand_if.o                  1 196             2 076
+    scsi_data.o                           116      132
+    startup_stm32f10x_hd.o       596
+    stm3210e_eval.o              424       16       16
+    stm3210e_eval_sdio_sd.o    3 374               212
+    stm32_it.o                    42
+    stm32f10x_dma.o              112
+    stm32f10x_exti.o             116
+    stm32f10x_fsmc.o             156
+    stm32f10x_gpio.o             200
+    stm32f10x_rcc.o               76
+    stm32f10x_sdio.o             312
+    system_stm32f10x.o           236
+    usb_bot.o                    694               124
+    usb_core.o                 2 002                 5
+    usb_desc.o                            180       28
+    usb_endp.o                     8
+    usb_init.o                    32                43
+    usb_int.o                    436                 4
+    usb_istr.o                   188       56       60
+    usb_mem.o                     72
+    usb_prop.o                   548      148      148
+    usb_pwr.o                    388        1       45
+    usb_regs.o                   454
+    usb_scsi.o                   724
+    usb_sil.o                    102
+    --------------------------------------------------
+    Total:                    14 684      517    3 565
+
+command line: [2]
+    --------------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    exit.o                         4
+    low_level_init.o               4
+    --------------------------------------------------
+    Total:                         8
+
+rt7M_tl.a: [4]
+    ABImemcpy.o                  118
+    cexit.o                       10
+    cmain.o                       22
+    copy_init3.o                  46
+    cstartup_M.o                  12
+    data_init.o                   40
+    zero_init3.o                  34
+    --------------------------------------------------
+    Total:                       282
+
+shb_l.a: [5]
+    exit.o                        20
+    --------------------------------------------------
+    Total:                        20
+
+    Gaps                          18
+    Linker created                         39    1 024
+------------------------------------------------------
+    Grand Total:              15 012      556    4 589
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+?main                   0x080039e9         Code  Gb  cmain.o [4]
+ADC1_2_IRQHandler       0x08003ab9         Code  Wk  startup_stm32f10x_hd.o [1]
+ADC3_IRQHandler         0x08003b2d         Code  Wk  startup_stm32f10x_hd.o [1]
+Block_Read_count        0x20000c90    0x4  Data  Gb  memory.o [1]
+Block_State             0x20000d99    0x1  Data  Gb  nand_if.o [1]
+Block_offset            0x20000c94    0x4  Data  Gb  memory.o [1]
+Bot_Abort               0x08002b89   0x26  Code  Gb  usb_bot.o [1]
+Bot_State               0x20000c0c    0x1  Data  Gb  usb_bot.o [1]
+Bulk_Data_Buff          0x20000d08   0x40  Data  Gb  usb_bot.o [1]
+BusFault_Handler        0x0800392f    0x2  Code  Gb  stm32_it.o [1]
+ByteSwap                0x08001ca1    0xa  Code  Gb  usb_regs.o [1]
+CAN1_RX1_IRQHandler     0x08003ac5         Code  Wk  startup_stm32f10x_hd.o [1]
+CAN1_SCE_IRQHandler     0x08003ac9         Code  Wk  startup_stm32f10x_hd.o [1]
+CBW                     0x20000bec   0x20  Data  Gb  usb_bot.o [1]
+CBW_Decode              0x080029b1  0x166  Code  Gb  usb_bot.o [1]
+CID_Tab                 0x20000bc8   0x10  Data  Lc  stm3210e_eval_sdio_sd.o [1]
+CSD_Tab                 0x20000bb8   0x10  Data  Lc  stm3210e_eval_sdio_sd.o [1]
+CSTACK$$Base            0x20000df0          --   Gb  - Linker created -
+CSTACK$$Limit           0x200011f0          --   Gb  - Linker created -
+CSW                     0x20000da4   0x10  Data  Gb  usb_bot.o [1]
+CTR_HP                  0x08003749   0x70  Code  Gb  usb_int.o [1]
+CTR_LP                  0x08003621  0x128  Code  Gb  usb_int.o [1]
+CardType                0x20000bd8    0x4  Data  Lc  stm3210e_eval_sdio_sd.o [1]
+ClearDTOG_RX            0x08001b9b   0x24  Code  Gb  usb_regs.o [1]
+ClearDTOG_TX            0x08001bbf   0x22  Code  Gb  usb_regs.o [1]
+Clear_Status_Out        0x08001b7d   0x14  Code  Gb  usb_regs.o [1]
+CmdResp1Error           0x08000b39   0xd2  Code  Lc  stm3210e_eval_sdio_sd.o [1]
+CmdResp2Error           0x08000c25   0x26  Code  Lc  stm3210e_eval_sdio_sd.o [1]
+Config_Descriptor       0x20000158    0x8  Data  Gb  usb_prop.o [1]
+Counter                 0x20000c98    0x4  Data  Gb  memory.o [1]
+CurrentZone             0x20000da0    0x2  Data  Gb  nand_if.o [1]
+DMA1_Channel1_IRQHandler
+                        0x08003a9d         Code  Wk  startup_stm32f10x_hd.o [1]
+DMA1_Channel2_IRQHandler
+                        0x08003aa1         Code  Wk  startup_stm32f10x_hd.o [1]
+DMA1_Channel3_IRQHandler
+                        0x08003aa5         Code  Wk  startup_stm32f10x_hd.o [1]
+DMA1_Channel4_IRQHandler
+                        0x08003aa9         Code  Wk  startup_stm32f10x_hd.o [1]
+DMA1_Channel5_IRQHandler
+                        0x08003aad         Code  Wk  startup_stm32f10x_hd.o [1]
+DMA1_Channel6_IRQHandler
+                        0x08003ab1         Code  Wk  startup_stm32f10x_hd.o [1]
+DMA1_Channel7_IRQHandler
+                        0x08003ab5         Code  Wk  startup_stm32f10x_hd.o [1]
+DMA2_Channel1_IRQHandler
+                        0x08003b51         Code  Wk  startup_stm32f10x_hd.o [1]
+DMA2_Channel2_IRQHandler
+                        0x08003b55         Code  Wk  startup_stm32f10x_hd.o [1]
+DMA2_Channel3_IRQHandler
+                        0x08003b59         Code  Wk  startup_stm32f10x_hd.o [1]
+DMA2_Channel4_5_IRQHandler
+                        0x08003947    0x4  Code  Gb  stm32_it.o [1]
+DMAEndOfTransfer        0x20000be8    0x4  Data  Gb  stm3210e_eval_sdio_sd.o [1]
+DMA_ClearFlag           0x0800128f    0xc  Code  Gb  stm32f10x_dma.o [1]
+DMA_Cmd                 0x0800126b   0x14  Code  Gb  stm32f10x_dma.o [1]
+DMA_ITConfig            0x0800127f   0x10  Code  Gb  stm32f10x_dma.o [1]
+DMA_Init                0x08001235   0x36  Code  Gb  stm32f10x_dma.o [1]
+DataStageIn             0x080015a3   0xa6  Code  Lc  usb_core.o [1]
+Data_Buffer             0x20000970  0x200  Data  Gb  memory.o [1]
+Data_Len                0x20000c0e    0x2  Data  Gb  usb_bot.o [1]
+Data_Mul_MaxPacketSize  0x20000dee    0x1  Data  Gb  usb_core.o [1]
+Data_Setup0             0x08001715  0x182  Code  Lc  usb_core.o [1]
+DebugMon_Handler        0x08003935    0x2  Code  Gb  stm32_it.o [1]
+Device_Descriptor       0x20000150    0x8  Data  Gb  usb_prop.o [1]
+Device_Info             0x20000d48   0x1c  Data  Gb  usb_init.o [1]
+Device_Property         0x20000000   0x30  Data  Gb  usb_prop.o [1]
+Device_Table            0x20000168    0x4  Data  Gb  usb_prop.o [1]
+EP                      0x20000d70   0x20  Data  Gb  usb_pwr.o [1]
+EP1_IN_Callback         0x08003a45    0x4  Code  Gb  usb_endp.o [1]
+EP2_OUT_Callback        0x08003a49    0x4  Code  Gb  usb_endp.o [1]
+EPindex                 0x20000def    0x1  Data  Gb  usb_init.o [1]
+EXTI0_IRQHandler        0x08003a89         Code  Wk  startup_stm32f10x_hd.o [1]
+EXTI15_10_IRQHandler    0x08003b11         Code  Wk  startup_stm32f10x_hd.o [1]
+EXTI1_IRQHandler        0x08003a8d         Code  Wk  startup_stm32f10x_hd.o [1]
+EXTI2_IRQHandler        0x08003a91         Code  Wk  startup_stm32f10x_hd.o [1]
+EXTI3_IRQHandler        0x08003a95         Code  Wk  startup_stm32f10x_hd.o [1]
+EXTI4_IRQHandler        0x08003a99         Code  Wk  startup_stm32f10x_hd.o [1]
+EXTI9_5_IRQHandler      0x08003acd         Code  Wk  startup_stm32f10x_hd.o [1]
+EXTI_ClearITPendingBit  0x08003105    0x2  Code  Gb  stm32f10x_exti.o [1]
+EXTI_Init               0x080030a1   0x64  Code  Gb  stm32f10x_exti.o [1]
+EXTI_InitStructure      0x20000db4    0x8  Data  Gb  hw_config.o [1]
+FLASH_IRQHandler        0x08003a81         Code  Wk  startup_stm32f10x_hd.o [1]
+FSMC_IRQHandler         0x08003b31         Code  Wk  startup_stm32f10x_hd.o [1]
+FSMC_NANDCmd            0x080025f9   0x2e  Code  Gb  stm32f10x_fsmc.o [1]
+FSMC_NANDInit           0x08002595   0x64  Code  Gb  stm32f10x_fsmc.o [1]
+FSMC_NAND_AddressIncrement
+                        0x080024e5   0x36  Code  Gb  fsmc_nand.o [1]
+FSMC_NAND_EraseBlock    0x08002459   0x36  Code  Gb  fsmc_nand.o [1]
+FSMC_NAND_GetStatus     0x0800248f   0x20  Code  Gb  fsmc_nand.o [1]
+FSMC_NAND_Init          0x080021a1   0xa8  Code  Gb  fsmc_nand.o [1]
+FSMC_NAND_ReadID        0x08002249   0x22  Code  Gb  fsmc_nand.o [1]
+FSMC_NAND_ReadSmallPage
+                        0x080022b1   0x54  Code  Gb  fsmc_nand.o [1]
+FSMC_NAND_ReadSpareArea
+                        0x080023bb   0x4e  Code  Gb  fsmc_nand.o [1]
+FSMC_NAND_ReadStatus    0x080024af   0x1e  Code  Gb  fsmc_nand.o [1]
+FSMC_NAND_WriteSmallPage
+                        0x0800226b   0x46  Code  Gb  fsmc_nand.o [1]
+FSMC_NAND_WriteSpareArea
+                        0x08002305   0x42  Code  Gb  fsmc_nand.o [1]
+FindSCR                 0x08000cf5  0x136  Code  Lc  stm3210e_eval_sdio_sd.o [1]
+GPIO_CLK                0x08001024   0x10  Data  Gb  stm3210e_eval.o [1]
+GPIO_Init               0x0800116d   0xba  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_PIN                0x0800101c    0x8  Data  Gb  stm3210e_eval.o [1]
+GPIO_PORT               0x2000012c   0x10  Data  Gb  stm3210e_eval.o [1]
+GPIO_ReadInputDataBit   0x08001227    0xe  Code  Gb  stm32f10x_gpio.o [1]
+GetEPRxAddr             0x08001bf3    0xe  Code  Gb  usb_regs.o [1]
+GetEPRxCount            0x08001c47    0xe  Code  Gb  usb_regs.o [1]
+GetEPRxStatus           0x08001b57    0xe  Code  Gb  usb_regs.o [1]
+GetEPTxAddr             0x08001bf1    0x2  Code  Gb  usb_regs.o [1]
+Get_Max_Lun             0x08003459   0x12  Code  Gb  usb_prop.o [1]
+Get_SerialNum           0x08002ff3   0x28  Code  Gb  hw_config.o [1]
+HardFault_Handler       0x0800392b    0x2  Code  Gb  stm32_it.o [1]
+I2C1_ER_IRQHandler      0x08003af1         Code  Wk  startup_stm32f10x_hd.o [1]
+I2C1_EV_IRQHandler      0x08003aed         Code  Wk  startup_stm32f10x_hd.o [1]
+I2C2_ER_IRQHandler      0x08003af9         Code  Wk  startup_stm32f10x_hd.o [1]
+I2C2_EV_IRQHandler      0x08003af5         Code  Wk  startup_stm32f10x_hd.o [1]
+Idx                     0x20000c9c    0x4  Data  Gb  memory.o [1]
+In0_Process             0x08001909   0x4a  Code  Gb  usb_core.o [1]
+Initial_Page            0x20000d9e    0x2  Data  Gb  nand_if.o [1]
+IntToUnicode            0x0800301b   0x28  Code  Lc  hw_config.o [1]
+LUT                     0x20000170  0x800  Data  Gb  nand_if.o [1]
+Leave_LowPowerMode      0x08002f4b   0x14  Code  Gb  hw_config.o [1]
+Led_Config              0x08002fbb   0x1e  Code  Gb  hw_config.o [1]
+Led_RW_OFF              0x08002fdf    0x6  Code  Gb  hw_config.o [1]
+Led_RW_ON               0x08002fd9    0x6  Code  Gb  hw_config.o [1]
+LogAddress              0x20000d9c    0x2  Data  Gb  nand_if.o [1]
+MAL_Config              0x08003043   0x1c  Code  Gb  hw_config.o [1]
+MAL_GetStatus           0x08002c6b   0xa8  Code  Gb  mass_mal.o [1]
+MAL_Init                0x08002bbd   0x20  Code  Gb  mass_mal.o [1]
+MAL_Read                0x08002c27   0x44  Code  Gb  mass_mal.o [1]
+MAL_Write               0x08002bdd   0x4a  Code  Gb  mass_mal.o [1]
+MASS_ConfigDescriptor   0x080038a4   0x20  Data  Gb  usb_desc.o [1]
+MASS_Data_Setup         0x080033a7   0x3e  Code  Gb  usb_prop.o [1]
+MASS_DeviceDescriptor   0x08003890   0x14  Data  Gb  usb_desc.o [1]
+MASS_GetConfigDescriptor
+                        0x08003439    0x6  Code  Gb  usb_prop.o [1]
+MASS_GetDeviceDescriptor
+                        0x08003433    0x6  Code  Gb  usb_prop.o [1]
+MASS_GetStringDescriptor
+                        0x0800343f   0x18  Code  Gb  usb_prop.o [1]
+MASS_Get_Interface_Setting
+                        0x08003429    0xa  Code  Gb  usb_prop.o [1]
+MASS_NoData_Setup       0x080033e5   0x44  Code  Gb  usb_prop.o [1]
+MASS_Reset              0x08003297   0xc2  Code  Gb  usb_prop.o [1]
+MASS_Status_In          0x080033a3    0x2  Code  Gb  usb_prop.o [1]
+MASS_Status_Out         0x080033a5    0x2  Code  Gb  usb_prop.o [1]
+MASS_StringInterface    0x08003918   0x10  Data  Gb  usb_desc.o [1]
+MASS_StringLangID       0x080038c4    0x4  Data  Gb  usb_desc.o [1]
+MASS_StringProduct      0x080038f0   0x28  Data  Gb  usb_desc.o [1]
+MASS_StringSerial       0x200000c4   0x1c  Data  Gb  usb_desc.o [1]
+MASS_StringVendor       0x080038c8   0x28  Data  Gb  usb_desc.o [1]
+MASS_init               0x08003279   0x1e  Code  Gb  usb_prop.o [1]
+Mass_Block_Count        0x20000c80    0x8  Data  Gb  mass_mal.o [1]
+Mass_Block_Size         0x20000c78    0x8  Data  Gb  mass_mal.o [1]
+Mass_Memory_Size        0x20000c70    0x8  Data  Gb  mass_mal.o [1]
+Mass_Storage_ClearFeature
+                        0x08003389   0x12  Code  Gb  usb_prop.o [1]
+Mass_Storage_In         0x08002905   0x5e  Code  Gb  usb_bot.o [1]
+Mass_Storage_Out        0x08002963   0x4e  Code  Gb  usb_bot.o [1]
+Mass_Storage_SetConfiguration
+                        0x08003363   0x26  Code  Gb  usb_prop.o [1]
+Mass_Storage_SetDeviceAddress
+                        0x0800339b    0x8  Code  Gb  usb_prop.o [1]
+Max_Lun                 0x20000164    0x4  Data  Gb  usb_prop.o [1]
+MemManage_Handler       0x0800392d    0x2  Code  Gb  stm32_it.o [1]
+Mode_Sense10_data       0x20000148    0x8  Data  Gb  scsi_data.o [1]
+Mode_Sense6_data        0x20000160    0x4  Data  Gb  scsi_data.o [1]
+NAND_BuildLUT           0x080020ad   0xe2  Code  Lc  nand_if.o [1]
+NAND_ConvertPhyAddress  0x08002069   0x1e  Code  Lc  nand_if.o [1]
+NAND_Copy               0x08001f15   0x46  Code  Lc  nand_if.o [1]
+NAND_Format             0x08001f5b   0x40  Code  Gb  nand_if.o [1]
+NAND_GetAddress         0x08001ecf   0x20  Code  Lc  nand_if.o [1]
+NAND_Init               0x08001cf5   0x16  Code  Gb  nand_if.o [1]
+NAND_Read               0x08001e7d   0x52  Code  Gb  nand_if.o [1]
+NAND_Write              0x08001d0b  0x150  Code  Gb  nand_if.o [1]
+NAND_Write_Cleanup      0x08001f9b   0x92  Code  Lc  nand_if.o [1]
+NMI_Handler             0x08003929    0x2  Code  Gb  stm32_it.o [1]
+NOP_Process             0x08001ac1    0x2  Code  Gb  usb_core.o [1]
+NVIC_Init               0x0800320b   0x58  Code  Gb  misc.o [1]
+NVIC_PriorityGroupConfig
+                        0x08003201    0xa  Code  Gb  misc.o [1]
+NoData_Setup0           0x08001649   0xcc  Code  Lc  usb_core.o [1]
+Out0_Process            0x08001953   0xb0  Code  Gb  usb_core.o [1]
+PMAToUserBufferCopy     0x08001cd5   0x1e  Code  Gb  usb_mem.o [1]
+PVD_IRQHandler          0x08003a75         Code  Wk  startup_stm32f10x_hd.o [1]
+Page00_Inquiry_Data     0x20000dc4    0x8  Data  Gb  scsi_data.o [1]
+PendSV_Handler          0x08003937    0x2  Code  Gb  stm32_it.o [1]
+Post0_Process           0x08001a03   0x2c  Code  Gb  usb_core.o [1]
+PowerOn                 0x0800349d   0x22  Code  Gb  usb_pwr.o [1]
+RCA                     0x20000bdc    0x4  Data  Lc  stm3210e_eval_sdio_sd.o [1]
+RCC_AHBPeriphClockCmd   0x080012ab   0x12  Code  Gb  stm32f10x_rcc.o [1]
+RCC_APB1PeriphClockCmd  0x080012cf   0x12  Code  Gb  stm32f10x_rcc.o [1]
+RCC_APB2PeriphClockCmd  0x080012bd   0x12  Code  Gb  stm32f10x_rcc.o [1]
+RCC_IRQHandler          0x08003a85         Code  Wk  startup_stm32f10x_hd.o [1]
+RCC_USBCLKConfig        0x080012a5    0x6  Code  Gb  stm32f10x_rcc.o [1]
+RTCAlarm_IRQHandler     0x08003b15         Code  Wk  startup_stm32f10x_hd.o [1]
+RTC_IRQHandler          0x08003a7d         Code  Wk  startup_stm32f10x_hd.o [1]
+ReadCapacity10_Data     0x20000dcc    0x8  Data  Gb  scsi_data.o [1]
+ReadFormatCapacity_Data
+                        0x2000013c    0xc  Data  Gb  scsi_data.o [1]
+ReadSpareArea           0x08001eef   0x26  Code  Gb  nand_if.o [1]
+Read_Memory             0x08002d25   0xa2  Code  Gb  memory.o [1]
+Region$$Table$$Base     0x080039c4          --   Gb  - Linker created -
+Region$$Table$$Limit    0x080039e8          --   Gb  - Linker created -
+Reset_Handler           0x08003a29         Code  Wk  startup_stm32f10x_hd.o [1]
+Resume                  0x08003581   0x84  Code  Gb  usb_pwr.o [1]
+ResumeS                 0x20000dd4    0x4  Data  Gb  usb_pwr.o [1]
+Resume_Init             0x08003565   0x1a  Code  Gb  usb_pwr.o [1]
+SCSI_Address_Management
+                        0x08002873   0x5e  Code  Gb  usb_scsi.o [1]
+SCSI_BlkLen             0x20000c14    0x4  Data  Gb  usb_bot.o [1]
+SCSI_Format_Cmd         0x08002815   0x1e  Code  Gb  usb_scsi.o [1]
+SCSI_Inquiry_Cmd        0x08002631   0x22  Code  Gb  usb_scsi.o [1]
+SCSI_Invalid_Cmd        0x08002845   0x1e  Code  Gb  usb_scsi.o [1]
+SCSI_LBA                0x20000c10    0x4  Data  Gb  usb_bot.o [1]
+SCSI_ModeSense10_Cmd    0x080026f1    0x8  Code  Gb  usb_scsi.o [1]
+SCSI_ModeSense6_Cmd     0x080026e9    0x8  Code  Gb  usb_scsi.o [1]
+SCSI_Read10_Cmd         0x08002713   0x56  Code  Gb  usb_scsi.o [1]
+SCSI_ReadCapacity10_Cmd
+                        0x08002689   0x3e  Code  Gb  usb_scsi.o [1]
+SCSI_ReadFormatCapacity_Cmd
+                        0x08002653   0x36  Code  Gb  usb_scsi.o [1]
+SCSI_RequestSense_Cmd   0x080026f9   0x10  Code  Gb  usb_scsi.o [1]
+SCSI_Start_Stop_Unit_Cmd
+                        0x08002711    0x2  Code  Gb  usb_scsi.o [1]
+SCSI_TestUnitReady_Cmd  0x080027ed   0x20  Code  Gb  usb_scsi.o [1]
+SCSI_Verify10_Cmd       0x080027bf   0x26  Code  Gb  usb_scsi.o [1]
+SCSI_Write10_Cmd        0x08002769   0x50  Code  Gb  usb_scsi.o [1]
+SDCardInfo              0x20000cb0   0x58  Data  Gb  stm3210e_eval_sdio_sd.o [1]
+SDEnWideBus             0x08000c5b   0x72  Code  Lc  stm3210e_eval_sdio_sd.o [1]
+SDIO_ClearFlag          0x08001119    0x2  Code  Gb  stm32f10x_sdio.o [1]
+SDIO_ClearITPendingBit  0x0800112b    0x2  Code  Gb  stm32f10x_sdio.o [1]
+SDIO_ClockCmd           0x08001075    0x6  Code  Gb  stm32f10x_sdio.o [1]
+SDIO_CmdInitStructure   0x20000ba4   0x14  Data  Gb  stm3210e_eval_sdio_sd.o [1]
+SDIO_DMACmd             0x0800109d    0x6  Code  Gb  stm32f10x_sdio.o [1]
+SDIO_DataConfig         0x080010df   0x24  Code  Gb  stm32f10x_sdio.o [1]
+SDIO_DataInitStructure  0x20000b8c   0x18  Data  Gb  stm3210e_eval_sdio_sd.o [1]
+SDIO_DeInit             0x08001035   0x1c  Code  Gb  stm32f10x_sdio.o [1]
+SDIO_GetCommandResponse
+                        0x080010c3    0x8  Code  Gb  stm32f10x_sdio.o [1]
+SDIO_GetFlagStatus      0x08001109   0x10  Code  Gb  stm32f10x_sdio.o [1]
+SDIO_GetITStatus        0x0800111b   0x10  Code  Gb  stm32f10x_sdio.o [1]
+SDIO_GetPowerState      0x08001081    0xa  Code  Gb  stm32f10x_sdio.o [1]
+SDIO_GetResponse        0x080010cb   0x14  Code  Gb  stm32f10x_sdio.o [1]
+SDIO_IRQHandler         0x08003943    0x4  Code  Gb  stm32_it.o [1]
+SDIO_ITConfig           0x0800108b   0x12  Code  Gb  stm32f10x_sdio.o [1]
+SDIO_Init               0x08001051   0x24  Code  Gb  stm32f10x_sdio.o [1]
+SDIO_InitStructure      0x20000b70   0x18  Data  Gb  stm3210e_eval_sdio_sd.o [1]
+SDIO_ReadData           0x08001103    0x6  Code  Gb  stm32f10x_sdio.o [1]
+SDIO_SendCommand        0x080010a3   0x20  Code  Gb  stm32f10x_sdio.o [1]
+SDIO_SetPowerState      0x0800107b    0x6  Code  Gb  stm32f10x_sdio.o [1]
+SD_Detect               0x080001ef   0x22  Code  Gb  stm3210e_eval_sdio_sd.o [1]
+SD_EnableWideBusOperation
+                        0x0800075d   0x5c  Code  Gb  stm3210e_eval_sdio_sd.o [1]
+SD_GetCardInfo          0x080004b3  0x2aa  Code  Gb  stm3210e_eval_sdio_sd.o [1]
+SD_GetState             0x080001cb   0x24  Code  Gb  stm3210e_eval_sdio_sd.o [1]
+SD_GetStatus            0x080001b1   0x1a  Code  Gb  stm3210e_eval_sdio_sd.o [1]
+SD_Init                 0x08000131   0x80  Code  Gb  stm3210e_eval_sdio_sd.o [1]
+SD_InitializeCards      0x080003b3  0x100  Code  Gb  stm3210e_eval_sdio_sd.o [1]
+SD_LowLevel_DMA_RxConfig
+                        0x08000f5d   0x16  Code  Gb  stm3210e_eval.o [1]
+SD_LowLevel_DMA_TxConfig
+                        0x08000f45   0x18  Code  Gb  stm3210e_eval.o [1]
+SD_LowLevel_Init        0x08000ef1   0x3e  Code  Gb  stm3210e_eval.o [1]
+SD_PowerON              0x08000211  0x174  Code  Gb  stm3210e_eval_sdio_sd.o [1]
+SD_ProcessDMAIRQ        0x08000b11   0x1e  Code  Gb  stm3210e_eval_sdio_sd.o [1]
+SD_ProcessIRQSrc        0x08000a85   0x8c  Code  Gb  stm3210e_eval_sdio_sd.o [1]
+SD_ReadMultiBlocks      0x08000837   0x78  Code  Gb  stm3210e_eval_sdio_sd.o [1]
+SD_SelectDeselect       0x080007c7   0x2a  Code  Gb  stm3210e_eval_sdio_sd.o [1]
+SD_SendStatus           0x08000a5f   0x20  Code  Gb  stm3210e_eval_sdio_sd.o [1]
+SD_StopTransfer         0x08000a35   0x2a  Code  Gb  stm3210e_eval_sdio_sd.o [1]
+SD_WaitReadOperation    0x080008c3   0x3c  Code  Gb  stm3210e_eval_sdio_sd.o [1]
+SD_WaitWriteOperation   0x080009d5   0x3c  Code  Gb  stm3210e_eval_sdio_sd.o [1]
+SD_WriteMultiBlocks     0x0800092f   0x72  Code  Gb  stm3210e_eval_sdio_sd.o [1]
+SPI1_IRQHandler         0x08003afd         Code  Wk  startup_stm32f10x_hd.o [1]
+SPI2_IRQHandler         0x08003b01         Code  Wk  startup_stm32f10x_hd.o [1]
+SPI3_IRQHandler         0x08003b3d         Code  Wk  startup_stm32f10x_hd.o [1]
+STM_EVAL_LEDInit        0x08000e8d   0x2e  Code  Gb  stm3210e_eval.o [1]
+STM_EVAL_LEDOff         0x08000ecf   0x14  Code  Gb  stm3210e_eval.o [1]
+STM_EVAL_LEDOn          0x08000ebb   0x14  Code  Gb  stm3210e_eval.o [1]
+SVC_Handler             0x08003933    0x2  Code  Gb  stm32_it.o [1]
+SaveRState              0x20000de0    0x2  Data  Gb  usb_int.o [1]
+SaveTState              0x20000de2    0x2  Data  Gb  usb_int.o [1]
+Scsi_Sense_Data         0x20000118   0x14  Data  Gb  scsi_data.o [1]
+SetBTABLE               0x08001ae5    0xe  Code  Gb  usb_regs.o [1]
+SetDeviceAddress        0x08001a45   0x36  Code  Gb  usb_core.o [1]
+SetEPRxAddr             0x08001be3    0xe  Code  Gb  usb_regs.o [1]
+SetEPRxCount            0x08001c0f   0x38  Code  Gb  usb_regs.o [1]
+SetEPRxStatus           0x08001b29   0x20  Code  Gb  usb_regs.o [1]
+SetEPRxValid            0x08001b65   0x18  Code  Gb  usb_regs.o [1]
+SetEPTxAddr             0x08001be1    0x2  Code  Gb  usb_regs.o [1]
+SetEPTxCount            0x08001c01    0xe  Code  Gb  usb_regs.o [1]
+SetEPTxStatus           0x08001b07   0x22  Code  Gb  usb_regs.o [1]
+SetEPType               0x08001af3   0x14  Code  Gb  usb_regs.o [1]
+Set_CSW                 0x08002b43   0x2e  Code  Gb  usb_bot.o [1]
+Set_Scsi_Sense_Data     0x08002709    0x8  Code  Gb  usb_scsi.o [1]
+Set_System              0x08002f0d   0x28  Code  Gb  hw_config.o [1]
+Set_USBClock            0x08002f35   0x16  Code  Gb  hw_config.o [1]
+Setup0_Process          0x080018a1   0x68  Code  Gb  usb_core.o [1]
+Standard_ClearFeature   0x08001439   0xc2  Code  Gb  usb_core.o [1]
+Standard_GetConfiguration
+                        0x080012f1   0x18  Code  Gb  usb_core.o [1]
+Standard_GetDescriptorData
+                        0x08001589   0x1a  Code  Gb  usb_core.o [1]
+Standard_GetInterface   0x0800133b   0x18  Code  Gb  usb_core.o [1]
+Standard_GetStatus      0x080013a3   0x8e  Code  Gb  usb_core.o [1]
+Standard_Inquiry_Data   0x20000058   0x24  Data  Gb  scsi_data.o [1]
+Standard_Inquiry_Data2  0x2000007c   0x24  Data  Gb  scsi_data.o [1]
+Standard_SetConfiguration
+                        0x08001309   0x32  Code  Gb  usb_core.o [1]
+Standard_SetDeviceFeature
+                        0x0800156d   0x1c  Code  Gb  usb_core.o [1]
+Standard_SetEndPointFeature
+                        0x080014fb   0x72  Code  Gb  usb_core.o [1]
+Standard_SetInterface   0x0800135d   0x46  Code  Gb  usb_core.o [1]
+Status                  0x20000c88    0x4  Data  Gb  mass_mal.o [1]
+StatusInfo              0x20000ddc    0x4  Data  Gb  usb_core.o [1]
+StopCondition           0x20000be0    0x4  Data  Gb  stm3210e_eval_sdio_sd.o [1]
+String_Descriptor       0x20000030   0x28  Data  Gb  usb_prop.o [1]
+Suspend                 0x080034bf   0xa6  Code  Gb  usb_pwr.o [1]
+SysTick_Handler         0x08003939    0x2  Code  Gb  stm32_it.o [1]
+SystemInit              0x08003115   0xd8  Code  Gb  system_stm32f10x.o [1]
+TAMPER_IRQHandler       0x08003a79         Code  Wk  startup_stm32f10x_hd.o [1]
+TIM1_BRK_IRQHandler     0x08003ad1         Code  Wk  startup_stm32f10x_hd.o [1]
+TIM1_CC_IRQHandler      0x08003add         Code  Wk  startup_stm32f10x_hd.o [1]
+TIM1_TRG_COM_IRQHandler
+                        0x08003ad9         Code  Wk  startup_stm32f10x_hd.o [1]
+TIM1_UP_IRQHandler      0x08003ad5         Code  Wk  startup_stm32f10x_hd.o [1]
+TIM2_IRQHandler         0x08003ae1         Code  Wk  startup_stm32f10x_hd.o [1]
+TIM3_IRQHandler         0x08003ae5         Code  Wk  startup_stm32f10x_hd.o [1]
+TIM4_IRQHandler         0x08003ae9         Code  Wk  startup_stm32f10x_hd.o [1]
+TIM5_IRQHandler         0x08003b39         Code  Wk  startup_stm32f10x_hd.o [1]
+TIM6_IRQHandler         0x08003b49         Code  Wk  startup_stm32f10x_hd.o [1]
+TIM7_IRQHandler         0x08003b4d         Code  Wk  startup_stm32f10x_hd.o [1]
+TIM8_BRK_IRQHandler     0x08003b1d         Code  Wk  startup_stm32f10x_hd.o [1]
+TIM8_CC_IRQHandler      0x08003b29         Code  Wk  startup_stm32f10x_hd.o [1]
+TIM8_TRG_COM_IRQHandler
+                        0x08003b25         Code  Wk  startup_stm32f10x_hd.o [1]
+TIM8_UP_IRQHandler      0x08003b21         Code  Wk  startup_stm32f10x_hd.o [1]
+TransferEnd             0x20000be4    0x4  Data  Gb  stm3210e_eval_sdio_sd.o [1]
+TransferError           0x20000b88    0x1  Data  Gb  stm3210e_eval_sdio_sd.o [1]
+TransferState           0x20000c8c    0x1  Data  Gb  memory.o [1]
+Transfer_Data_Request   0x08002b17   0x2c  Code  Gb  usb_bot.o [1]
+UART4_IRQHandler        0x08003b41         Code  Wk  startup_stm32f10x_hd.o [1]
+UART5_IRQHandler        0x08003b45         Code  Wk  startup_stm32f10x_hd.o [1]
+USART1_IRQHandler       0x08003b05         Code  Wk  startup_stm32f10x_hd.o [1]
+USART2_IRQHandler       0x08003b09         Code  Wk  startup_stm32f10x_hd.o [1]
+USART3_IRQHandler       0x08003b0d         Code  Wk  startup_stm32f10x_hd.o [1]
+USBWakeUp_IRQHandler    0x0800394b    0x8  Code  Gb  stm32_it.o [1]
+USB_Cable_Config        0x08002ff1    0x2  Code  Gb  hw_config.o [1]
+USB_Configured_LED      0x08002fe5    0x6  Code  Gb  hw_config.o [1]
+USB_Disconnect_Config   0x0800305f   0x28  Code  Gb  hw_config.o [1]
+USB_HP_CAN1_TX_IRQHandler
+                        0x0800393b    0x4  Code  Gb  stm32_it.o [1]
+USB_Init                0x0800397d   0x20  Code  Gb  usb_init.o [1]
+USB_Interrupts_Config   0x08002f5f   0x4c  Code  Gb  hw_config.o [1]
+USB_Istr                0x080037d5   0xbc  Code  Gb  usb_istr.o [1]
+USB_LP_CAN1_RX0_IRQHandler
+                        0x0800393f    0x4  Code  Gb  stm32_it.o [1]
+USB_NotConfigured_LED   0x08002feb    0x6  Code  Gb  hw_config.o [1]
+USB_SIL_Init            0x08002ea5   0x14  Code  Gb  usb_sil.o [1]
+USB_SIL_Read            0x08002ee7   0x24  Code  Gb  usb_sil.o [1]
+USB_SIL_Write           0x08002ec1   0x26  Code  Gb  usb_sil.o [1]
+UsageFault_Handler      0x08003931    0x2  Code  Gb  stm32_it.o [1]
+UserToPMABufferCopy     0x08001cab   0x2a  Code  Gb  usb_mem.o [1]
+User_Standard_Requests  0x200000a0   0x24  Data  Gb  usb_prop.o [1]
+WWDG_IRQHandler         0x08003a71         Code  Wk  startup_stm32f10x_hd.o [1]
+Write_Memory            0x08002dc7   0xb4  Code  Gb  memory.o [1]
+Write_State             0x20000d98    0x1  Data  Gb  nand_if.o [1]
+Written_Pages           0x20000da2    0x2  Data  Gb  nand_if.o [1]
+__aeabi_memcpy          0x0800251d         Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy4         0x0800253d         Code  Gb  ABImemcpy.o [4]
+__aeabi_memcpy8         0x0800253d         Code  Gb  ABImemcpy.o [4]
+__cmain                 0x080039e9         Code  Gb  cmain.o [4]
+__exit                  0x08003a15   0x14  Code  Gb  exit.o [5]
+__iar_copy_init3        0x08000e5f   0x2e  Code  Gb  copy_init3.o [4]
+__iar_data_init3        0x0800399d   0x28  Code  Gb  data_init.o [4]
+__iar_program_start     0x08003a39         Code  Gb  cstartup_M.o [4]
+__iar_zero_init3        0x08001ac3   0x22  Code  Gb  zero_init3.o [4]
+__low_level_init        0x080039ff    0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000         Data  Gb  startup_stm32f10x_hd.o [1]
+_call_main              0x080039f5         Code  Gb  cmain.o [4]
+_exit                   0x08003a09         Code  Gb  cexit.o [4]
+_main                   0x080039fb         Code  Gb  cmain.o [4]
+bDeviceState            0x20000de8    0x4  Data  Gb  usb_pwr.o [1]
+bIntPackSOF             0x20000de4    0x1  Data  Gb  usb_istr.o [1]
+exit                    0x08003a03    0x4  Code  Gb  exit.o [3]
+fAddress                0x20000dbc    0x8  Data  Gb  nand_if.o [1]
+fSuspendEnabled         0x2000016c    0x1  Data  Gb  usb_pwr.o [1]
+mSDCardInfo             0x20000c18   0x58  Data  Gb  mass_mal.o [1]
+main                    0x08003955   0x28  Code  Gb  main.o [1]
+pEpInt_IN               0x200000e0   0x1c  Data  Gb  usb_istr.o [1]
+pEpInt_OUT              0x200000fc   0x1c  Data  Gb  usb_istr.o [1]
+pInformation            0x20000d64    0x4  Data  Gb  usb_init.o [1]
+pProperty               0x20000d68    0x4  Data  Gb  usb_init.o [1]
+pUser_Standard_Requests
+                        0x20000d6c    0x4  Data  Gb  usb_init.o [1]
+phBlock                 0x20000d9a    0x2  Data  Gb  nand_if.o [1]
+remotewakeupon          0x20000dd8    0x4  Data  Gb  usb_pwr.o [1]
+wAddress                0x20000d90    0x8  Data  Gb  nand_if.o [1]
+wInterrupt_Mask         0x20000dec    0x2  Data  Gb  usb_init.o [1]
+wIstr                   0x20000de6    0x2  Data  Gb  usb_istr.o [1]
+
+
+[1] = C:\Users\lisonchen\1project\c_STM32_USB-FS-Device_Lib_V4.0.0\Projects\Mass_Storage\EWARM\STM3210E-EVAL\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  15 012 bytes of readonly  code memory
+     556 bytes of readonly  data memory
+   4 589 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
