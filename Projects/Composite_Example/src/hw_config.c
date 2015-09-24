@@ -174,7 +174,7 @@ void Set_System(void)
   ADC_Configuration();
 #endif
   /* MAL configuration */
-  MAL_Config();
+//  MAL_Config();
 }
 
 /*******************************************************************************
