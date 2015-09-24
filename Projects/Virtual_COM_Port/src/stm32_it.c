@@ -187,7 +187,7 @@ void EVAL_COM1_IRQHandler(void)
   if (USART_GetITStatus(EVAL_COM1, USART_IT_RXNE) != RESET)
   {
     /* Send the received data to the PC Host*/
-    USART_To_USB_Send_Data();
+//    USART_To_USB_Send_Data();
   }
 
   /* If overrun condition occurs, clear the ORE flag and recover communication */

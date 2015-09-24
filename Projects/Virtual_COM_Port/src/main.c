@@ -54,8 +54,12 @@ int main(void)
   USB_Interrupts_Config();
   USB_Init();
   
+  uint8_t USB_Test_Buffer[] = "USB Virtual COM Port";
+  uint8_t count = sizeof(USB_Test_Buffer)/sizeof(USB_Test_Buffer[0]);
+  USART_To_USB_Send_Data(USB_Test_Buffer, count);
   while (1)
   {
+//    USART_To_USB_Send_Data(USB_Test_Buffer, count);
   }
 }
 #ifdef USE_FULL_ASSERT

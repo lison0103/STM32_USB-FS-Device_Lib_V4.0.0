@@ -485,7 +485,7 @@ void Handle_USBAsynchXfer (void)
 * Input          : None.
 * Return         : none.
 *******************************************************************************/
-void USART_To_USB_Send_Data(void)
+void USART_To_USB_Send_Data(uint8_t* data_buffer, uint8_t Nb_bytes)
 {
   
   if (linecoding.datatype == 7)
@@ -494,16 +494,27 @@ void USART_To_USB_Send_Data(void)
   }
   else if (linecoding.datatype == 8)
   {
-    USART_Rx_Buffer[USART_Rx_ptr_in] = USART_ReceiveData(EVAL_COM1);
+      uint32_t i,j = 0;
+      
+      j = USART_Rx_ptr_in;
+      for (i = USART_Rx_ptr_in; i < Nb_bytes + j; i++)
+      {            
+          USART_Rx_Buffer[i] = *(data_buffer + i - j);
+          USART_Rx_ptr_in++;
+          if(USART_Rx_ptr_in == USART_RX_DATA_SIZE)
+          {
+            USART_Rx_ptr_in = 0;
+          }
+      }     
   }
   
-  USART_Rx_ptr_in++;
+  
   
   /* To avoid buffer overflow */
-  if(USART_Rx_ptr_in == USART_RX_DATA_SIZE)
-  {
-    USART_Rx_ptr_in = 0;
-  }
+//  if(USART_Rx_ptr_in == USART_RX_DATA_SIZE)
+//  {
+//    USART_Rx_ptr_in = 0;
+//  }
 }
 
 /*******************************************************************************
