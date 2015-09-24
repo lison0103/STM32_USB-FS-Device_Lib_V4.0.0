@@ -107,9 +107,9 @@
                                                | RCC_APB2Periph_GPIOE )
 
 #elif defined (USE_STM3210E_EVAL)
-  #define USB_DISCONNECT                      GPIOB  
-  #define USB_DISCONNECT_PIN                  GPIO_Pin_14
-  #define RCC_APB2Periph_GPIO_DISCONNECT      RCC_APB2Periph_GPIOB
+  #define USB_DISCONNECT                      GPIOC  
+  #define USB_DISCONNECT_PIN                  GPIO_Pin_8
+  #define RCC_APB2Periph_GPIO_DISCONNECT      RCC_APB2Periph_GPIOC
                                                 
   #define RCC_APB2Periph_ALLGPIO              (RCC_APB2Periph_GPIOA \
                                                | RCC_APB2Periph_GPIOB \
